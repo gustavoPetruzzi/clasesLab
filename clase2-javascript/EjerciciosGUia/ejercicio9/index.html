@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio 8</title>
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <h1> Calculadora </h1>
+    <form action="">
+        <fieldset>
+            <label for="numero1">Primer numero : </label>
+            <input type="text" id="numero1" size="20">
+            <br>    
+            <label for="numero2">Segundo numero: </label>
+            <input type="text" id="numero2" size="19">
+            <br>
+            <!-- USO RADIO BUTTON -->
+            
+            <input type="radio" name="operacion" id="+" value="+">
+            <label for="+"> +</label>
+            <br>
+            <input type="radio" name="operacion" id="-" value="-">
+            <label for="+"> -</label>
+            <br>
+            <input type="radio" name="operacion" id="*" value="*">
+            <label for="+"> *</label>
+            <br>
+            <input type="radio" name="operacion" id="/" value="/">
+            <label for="+"> /</label>
+            <br>
+            <br>
+            <br>
+            <button onclick="mostrarResultado()">Resultado</button>
+        </fieldset>
+        <br>
+    </form>
+</body>
+</html>
