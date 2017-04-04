@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplo 1</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <style>
+            h1{
+                color: fuchsia;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 60px;
+                font-style: italic;
+                font-weight:bolder;
+                background-color: black;
+                /*text-decoration: overline;*/
+                letter-spacing: 100px;
+                text-transform: capitalize; 
+                /*
+                TODO FONT EN UNA LINEA
+                font: font-weight: font-style: font-size: font-family: 
+                */
+            }
+            
+            h2{
+                border: 6px;
+                border-color: red;
+                border-style: groove;
+                color:lawngreen;
+                text-align: center;
+                padding: 1px 100px;
+                
+                
+            }
+            /* TODO LO QUE ESTOY ESTA ADENTRO DE * ES EL DEFAULT DEL NAVEGADOR */
+
+            *{
+
+            }
+
+
+            body{
+                background-color: black; 
+                /*
+                background-image: url("images/imagen.jpg");
+                */
+            }
+
+
+
+            /* CLASS -->para varios*/
+            .vistoso{ 
+                background-color: lightgreen;
+                color: midnightblue;
+            }
+            /* ID -->para uno solo*/
+            #vistoso2 {
+                color:red;
+                font-size: 20px;
+            }
+            /* TODOS LOS SPAN QUE SEAN HIJOS DE P */
+            p span{
+                color: yellow;
+            }
+            /* AGARRA AL QUE ESTA DESPUES DEL H1 */
+            h1 + p {
+                background-color: aqua;
+            }
+
+            p ~ p {
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 style="color: lavender"> Estoy es un h1</h1>
+        <h1> hola mubndo</h1>
+        <h2>Aca es un h2</h2>
+
+        <h1 class="vistoso">tengo un h1</h1>
+        <p id="vistoso2"> Lorem ipsum dolor sit amet, <span> adipisicing elit. </span> At esse error atque ipsam quam necessitatibus, praesentium ut voluptatibus commodi, aperiam quis a! Fugit repudiandae esse nulla culpa recusandae voluptatibus, voluptatum.</p>
+        <p id="vistoso2"> SEGUNDO LOREM Lorem ipsum dolor sit amet, <span> adipisicing elit. </span> At esse error atque ipsam quam necessitatibus, praesentium ut voluptatibus commodi, aperiam quis a! Fugit repudiandae esse nulla culpa recusandae voluptatibus, voluptatum.</p>
+        <p id="vistoso2"> TERCER LOREM Lorem ipsum dolor sit amet, <span> adipisicing elit. </span> At esse error atque ipsam quam necessitatibus, praesentium ut voluptatibus commodi, aperiam quis a! Fugit repudiandae esse nulla culpa recusandae voluptatibus, voluptatum.</p>
+        <div></div>
+    </body>
+</html>
