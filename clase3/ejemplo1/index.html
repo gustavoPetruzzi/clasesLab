@@ -65,9 +65,19 @@
             h1 + p {
                 background-color: aqua;
             }
-
+            /* AFECTA A LOS TERMINOS QUE ESTAN DESPUES DEL PRIMERO */
             p ~ p {
-                
+                color: lightpink;
+            }
+            a:visited{
+                color: white;
+            }
+            
+            p:hover{
+                background-color: fuchsia;
+            }
+            textarea:focus{
+                background-color: black;
             }
             
         </style>
@@ -79,8 +89,11 @@
 
         <h1 class="vistoso">tengo un h1</h1>
         <p id="vistoso2"> Lorem ipsum dolor sit amet, <span> adipisicing elit. </span> At esse error atque ipsam quam necessitatibus, praesentium ut voluptatibus commodi, aperiam quis a! Fugit repudiandae esse nulla culpa recusandae voluptatibus, voluptatum.</p>
-        <p id="vistoso2"> SEGUNDO LOREM Lorem ipsum dolor sit amet, <span> adipisicing elit. </span> At esse error atque ipsam quam necessitatibus, praesentium ut voluptatibus commodi, aperiam quis a! Fugit repudiandae esse nulla culpa recusandae voluptatibus, voluptatum.</p>
-        <p id="vistoso2"> TERCER LOREM Lorem ipsum dolor sit amet, <span> adipisicing elit. </span> At esse error atque ipsam quam necessitatibus, praesentium ut voluptatibus commodi, aperiam quis a! Fugit repudiandae esse nulla culpa recusandae voluptatibus, voluptatum.</p>
+        <p> SEGUNDO LOREM Lorem ipsum dolor sit amet, <span> adipisicing elit. </span> At esse error atque ipsam quam necessitatibus, praesentium ut voluptatibus commodi, aperiam quis a! Fugit repudiandae esse nulla culpa recusandae voluptatibus, voluptatum.</p>
+        <p> TERCER LOREM Lorem ipsum dolor sit amet, <span> adipisicing elit. </span> At esse error atque ipsam quam necessitatibus, praesentium ut voluptatibus commodi, aperiam quis a! Fugit repudiandae esse nulla culpa recusandae voluptatibus, voluptatum.</p>
+        <a href="http://www.google.com"> algun link</a>
+        <br>
+        <textarea name="hola" id="hola" cols="30" rows="10"></textarea>
         <div></div>
     </body>
 </html>
