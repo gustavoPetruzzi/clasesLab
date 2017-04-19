@@ -1,0 +1,10 @@
+
+	Enviar datos
+var envio = { 'nombre':'carlos', 'edad':'30'}
+var myJson = jsonStringify(myobj)
+
+	Recibir datos
+
+var myJson = { 'nombre':'carlos', 'edad':'30'} ---> es un json
+
+var recibido = json.parse(myJson);
