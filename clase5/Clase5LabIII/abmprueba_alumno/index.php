@@ -1,5 +1,5 @@
 <?php
-require_once("clases\producto.php");
+require_once("clases/producto.php");
 $tituloVentana = "PRODUCTOS - con archivos, AJAX y JQUERY";
 
 ?>

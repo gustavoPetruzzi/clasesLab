@@ -15,7 +15,7 @@ function mostrarGrilla() {
         async: true
     })
         .done(function (grilla) {
-            alert(grilla);
+            
             $("#divGrilla").html(grilla);
         })
         .fail(function (peticion, textStatus, errorThrown) {

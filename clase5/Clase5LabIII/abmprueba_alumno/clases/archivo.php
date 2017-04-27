@@ -7,7 +7,7 @@ class Archivo{
 
 		//INDICO CUAL SERA EL DESTINO DEL ARCHIVO SUBIDO
 		$archivoTmp = date("Ymd_His") . ".jpg";
-		$destino = "tmp/" . $archivoTmp;
+		$destino = "archivos/tmp/" . $archivoTmp;
 		
 		$tipoArchivo = pathinfo($_FILES["archivo"]["name"], PATHINFO_EXTENSION);
 
