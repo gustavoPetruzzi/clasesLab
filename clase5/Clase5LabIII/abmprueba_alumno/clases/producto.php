@@ -109,7 +109,8 @@ class Producto
 		
 		for($i=0; $i<count($ListaDeProductosLeidos); $i++){
 			if($ListaDeProductosLeidos[$i]->codBarra == $obj->codBarra){//encontre el modificado, lo excluyo
-				$imagenParaBorrar = trim($ListaDeProductosLeidos[$i]->pathFoto);
+				$imagenParaBorrar = trim($ListaDeProductosLeidos[$i]->GetPathFoto());
+				
 				continue;
 			}
 			$ListaDeProductos[$i] = $ListaDeProductosLeidos[$i];
@@ -118,7 +119,7 @@ class Producto
 		array_push($ListaDeProductos, $obj);//agrego el producto modificado
 		
 		//BORRO LA IMAGEN ANTERIOR
-		unlink("archivos/".$imagenParaBorrar);
+		unlink("./archivos/".$imagenParaBorrar);
 		
 		//ABRO EL ARCHIVO
 		$ar = fopen("archivos/productos.txt", "w");
@@ -152,7 +153,7 @@ class Producto
 		
 		for($i=0; $i<count($ListaDeProductosLeidos); $i++){
 			if($ListaDeProductosLeidos[$i]->codBarra == $codBarra){//encontre el borrado, lo excluyo
-				$imagenParaBorrar = trim($ListaDeProductosLeidos[$i]->pathFoto);
+				$imagenParaBorrar = trim($ListaDeProductosLeidos[$i]->GetPathFoto());
 				continue;
 			}
 			$ListaDeProductos[$i] = $ListaDeProductosLeidos[$i];

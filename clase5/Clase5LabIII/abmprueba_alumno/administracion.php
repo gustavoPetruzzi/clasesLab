@@ -54,7 +54,7 @@ switch($queHago){
 		
 		$pathFoto = isset($_POST['foto']) ? $_POST['foto'] : NULL;
 
-		$res["Exito"] = Archivo::Borrar("./tmp/".$pathFoto);
+		$res["Exito"] = Archivo::Borrar("./archivos//tmp/".$pathFoto);
 		
 		echo json_encode($res);
 		
@@ -72,7 +72,7 @@ switch($queHago){
 			$retorno["Mensaje"] = "Lamentablemente ocurrio un error y no se pudo escribir en el archivo.";
 		}
 		else{
-			if(!Archivo::Mover("./tmp/".$obj->archivo, "./archivos/".$obj->archivo)){
+			if(!Archivo::Mover("./archivos/tmp/".$obj->archivo, "./archivos/".$obj->archivo)){
 				$retorno["Exito"] = FALSE;
 				$retorno["Mensaje"] = "Lamentablemente ocurrio un error al mover el archivo del repositorio temporal al repositorio final.";
 			}
@@ -114,7 +114,7 @@ switch($queHago){
 			$retorno["Mensaje"] = "Lamentablemente ocurrio un error y no se pudo escribir en el archivo.";
 		}
 		else{
-			if(!Archivo::Mover("./tmp/".$obj->archivo, "./archivos/".$obj->archivo)){
+			if(!Archivo::Mover("./archivos/tmp/".$obj->archivo, "./archivos/".$obj->archivo)){
 				$retorno["Exito"] = FALSE;
 				$retorno["Mensaje"] = "Lamentablemente ocurrio un error al mover el archivo del repositorio temporal al repositorio final.";
 			}

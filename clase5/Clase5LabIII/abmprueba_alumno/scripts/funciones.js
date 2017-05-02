@@ -81,7 +81,7 @@ function borrarFoto() {
     })
         .done(function (objJson) {
            
-           //completar
+           
 
             $("#divFoto").html("");
             $("#hdnArchivoTemp").val("");
@@ -182,11 +182,25 @@ function modificarProducto(objJson) {
     $("#nombre").val(objJson.nombre);
     $("#hdnQueHago").val("modificar");
     $("#codBarra").attr("readonly", "readonly");
+    
+    var url = "./administracion.php";
+    $.ajax({
+        type: 'POST',
+        url : url,
+        dataType: "json",
+        data: {
+            queHago: "modificar",
+            producto: producto
+        },
+    })
+    .done(function(objJson){
+        mostrarGrilla();
+    })
 
 }
 
 function validar(objJson) {
-    alert("Implementar Validaciones");
+    
     //aplicar validaciones
     return true;
 }
