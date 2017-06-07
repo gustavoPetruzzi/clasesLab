@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        //Permite cargar el .ts en el navegador
+        "removeComments": true,
+        "sourceMap": true
+        
+    }
+}
